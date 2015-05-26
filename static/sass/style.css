@@ -111,6 +111,12 @@
  * Unfortunately, the @extend operative does not work inside a media query or mix-in
  */
 /* Color Spaces: use for consistency */
+
+@font-face {
+    font-family: droid;
+    src: url(DroidNaskh.ttf);
+}
+
 .psf-widget, .python-needs-you-widget, .main-header, .site-base {
   background-color: #2b5b84;
   *zoom: 1;
@@ -210,7 +216,9 @@
   border-radius: 6px;
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05), inset 0 0 5px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05), inset 0 0 5px rgba(255, 255, 255, 0.5);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05), inset 0 0 5px rgba(255, 255, 255, 0.5); }
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05), inset 0 0 5px rgba(255, 255, 255, 0.5);
+  font-family: droid;
+ }
   .search-button:hover, #dive-into-python .flex-control-paging a:hover, .text form button:hover, .text form input[type=submit]:hover,
   .sidebar-widget form button:hover,
   .sidebar-widget form input[type=submit]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover, .button:hover, .search-button:focus, #dive-into-python .flex-control-paging a:focus, .text form button:focus, .text form input[type=submit]:focus,
@@ -423,6 +431,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
+  font-family: droid;
   margin: 0;
   padding: 0;
   border: 0;
@@ -545,6 +554,7 @@ small {
   font-size: 85%; }
 
 b, strong, th {
+  font-family: droid;
   font-weight: 700; }
 
 i, em, cite {
@@ -755,7 +765,7 @@ h1, .alpha {
 
 h2, .beta {
   color: #999999;
-  font-family: SourceSansProBold, Arial, sans-serif;
+  font-family: droid, Arial, sans-serif;
   font-size: 1.5em;
   margin-top: 1.3125em;
   margin-bottom: 0.32813em; }
@@ -768,21 +778,21 @@ h3, .chi {
 
 h4, .delta {
   color: #222222;
-  font-family: SourceSansProBold, Arial, sans-serif;
+  font-family: droid, Arial, sans-serif;
   font-size: 1.125em;
   margin-top: 1.3125em;
   margin-bottom: 0.4375em; }
 
 h5, .epsilon {
   color: #222222;
-  font-family: SourceSansProBold, Arial, sans-serif;
+  font-family: droid, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.0625em;
   margin-top: 1.75em; }
 
 h6, .gamma {
   color: #222222;
-  font-family: SourceSansProBold, Arial, sans-serif;
+  font-family: droid, Arial, sans-serif;
   margin-top: 1.75em; }
 
 blockquote {
@@ -814,7 +824,7 @@ blockquote {
 dl {
   border-top: 1px solid #e6e8ea; }
   dl dt {
-    font-family: SourceSansProBold, Arial, sans-serif;
+    font-family: droid, Arial, sans-serif;
     border-bottom: 1px solid #e6e8ea; }
   dl dd {
     padding-left: 1.5em;
@@ -914,7 +924,7 @@ input[type=image] {
   width: auto; }
 
 b, strong {
-  font-family: SourceSansProBold, Arial, sans-serif; }
+  font-family: droid, Arial, sans-serif; }
 
 i, em {
   font-family: SourceSansProItalic, Arial, sans-serif; }
@@ -1583,7 +1593,7 @@ input#s,
   .slide-copy h1 {
     color: #ffd343;
     font-size: 1.3125em;
-    font-family: SourceSansProBold, Arial, sans-serif; }
+    font-family: droid, Arial, sans-serif; }
 
 /* Avoid IDs if you can. In this case, these styles are intended to be very specific */
 #dive-into-python .flex-control-paging {
@@ -1606,6 +1616,7 @@ input#s,
     opacity: 1; }
 
 .introduction {
+  font-family: droid;
   color: #caccce;
   font-size: 1.25em;
   text-align: left;
@@ -1944,6 +1955,7 @@ table tfoot {
   border-top: 1px solid #dddddd; }
 
 .row-title {
+  font-family: droid;
   border-top: 5px solid #d4dbe1;
   padding: 0.75em 1em 0.5em; }
 
@@ -1964,6 +1976,8 @@ table tfoot {
   .sidebar-widget p, .small-widget ul, .download-list-widget ul, .most-recent-events ul, .triple-widget ul, .most-recent-posts ul,
   .medium-widget ul,
   .sidebar-widget ul {
+    font-family: droid;
+    text-align: justify;
     margin-bottom: 0.875em; }
     .small-widget p:last-child, .download-list-widget p:last-child, .most-recent-events p:last-child, .triple-widget p:last-child, .most-recent-posts p:last-child,
     .medium-widget p:last-child,
@@ -1978,6 +1992,7 @@ table tfoot {
 
 .widget-title,
 .listing-company {
+  font-family: droid;
   color: #444444;
   line-height: 1.25em;
   margin: 0 0 0.1em;
@@ -1985,6 +2000,7 @@ table tfoot {
   font-size: 1.3125em; }
   .fontface .widget-title, .fontface
   .listing-company {
+    font-family: droid;
     font-size: 1.50938em; }
     .fontface .widget-title span:before, .fontface
     .listing-company span:before {
@@ -2066,7 +2082,7 @@ table tfoot {
 
 .blog-name {
   display: block;
-  font-family: SourceSansProBold, Arial, sans-serif;
+  font-family: droid, Arial, sans-serif;
   letter-spacing: 0.01em; }
 
 .success-stories-widget blockquote {
@@ -2163,7 +2179,7 @@ table tfoot {
 /* ! ===== PSF Board Meeting Minutes ===== */
 .draft-preview {
   color: #b55863;
-  font-family: SourceSansProBold, Arial, sans-serif; }
+  font-family: droid, Arial, sans-serif; }
 
 /* ! ===== PEP Widget ===== */
 .pep-widget {
@@ -2182,7 +2198,7 @@ table tfoot {
         color: #1f3b47; }
   .pep-widget .pep-number {
     color: #666666;
-    font-family: SourceSansProBold, Arial, sans-serif;
+    font-family: droid, Arial, sans-serif;
     display: inline-block;
     width: 3em; }
 
@@ -2224,13 +2240,13 @@ table tfoot {
     </li>
 </ul>*/
 .pep-list-header {
-  font-family: SourceSansProBold, Arial, sans-serif;
+  font-family: droid, Arial, sans-serif;
   display: none; }
 
 .pep-index-list {
   margin-bottom: 2.625em; }
   .pep-index-list .label {
-    font-family: SourceSansProBold, Arial, sans-serif;
+    font-family: droid, Arial, sans-serif;
     display: inline-block;
     width: 20%; }
   .pep-index-list li {
@@ -2275,7 +2291,7 @@ table tfoot {
   overflow: hidden;
   *zoom: 1; }
   .pep-owner-header .label {
-    font-family: SourceSansProBold, Arial, sans-serif;
+    font-family: droid, Arial, sans-serif;
     float: left;
     width: 50%;
     padding: .25em .5em .2em; }
@@ -2436,11 +2452,11 @@ p.quote-by-organization {
   padding: .5em;
   margin-bottom: .25em; }
   .twitter-stream li .view-on-twitter {
-    font-family: SourceSansProBold, Arial, sans-serif;
+    font-family: droid, Arial, sans-serif;
     font-size: 0.85714em; }
 
 .twitteruser {
-  font-family: SourceSansProBold, Arial, sans-serif; }
+  font-family: droid, Arial, sans-serif; }
 
 .twittermention {
   color: #3776ab; }
@@ -2480,7 +2496,7 @@ p.quote-by-organization {
 
 /* ! ===== Stylized lists of items, used on Downloads and others ===== */
 .list-row-headings {
-  font-family: SourceSansProBold, Arial, sans-serif;
+  font-family: droid, Arial, sans-serif;
   padding: .5em .5em .4em .75em;
   margin-right: 1.25em; }
 
@@ -2586,7 +2602,7 @@ p.quote-by-organization {
   display: block; }
 
 .release-number {
-  font-family: SourceSansProBold, Arial, sans-serif; }
+  font-family: droid, Arial, sans-serif; }
 
 .download-list-widget {
   /*modernizr*/ }
@@ -2851,7 +2867,7 @@ p.quote-by-organization {
     .sitemap .tier-1 > a {
       color: #3776ab;
       padding: .4em .5em .3em;
-      font-family: Flux-Bold, SourceSansProBold, Arial, sans-serif;
+      font-family: Flux-Bold, droid, Arial, sans-serif;
       font-size: 1.25em;
       margin-top: 0.875em;
       margin-bottom: 0em; }
@@ -2877,7 +2893,7 @@ p.quote-by-organization {
   margin-bottom: 0.5em; }
   .footer-links a {
     color: #89b4d9;
-    font-family: Flux-Bold, SourceSansProBold, Arial, sans-serif;
+    font-family: Flux-Bold, droid, Arial, sans-serif;
     font-size: 1.125em; }
     .fontface .footer-links a {
       font-size: 1.29375em; }
@@ -2888,6 +2904,7 @@ p.quote-by-organization {
       text-shadow: 0 0 5px rgba(255, 211, 67, 0.2); }
 
 .copyright {
+  font-family: droid;
   clear: both;
   color: #75a8d3;
   font-size: 0.75em;
@@ -3418,7 +3435,7 @@ p.quote-by-organization {
   font-style: normal; }
 
 @font-face {
-  font-family: 'SourceSansProBold';
+  font-family: 'droid';
   src: url("../fonts/SourceSansPro-Bold-webfont.eot");
   src: url("../fonts/SourceSansPro-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Bold-webfont.woff") format("woff"), url("../fonts/SourceSansPro-Bold-webfont.ttf") format("truetype"), url("../fonts/SourceSansPro-Bold-webfont.svg#source_sans_probold") format("svg");
   font-weight: bold;
