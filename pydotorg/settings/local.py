@@ -12,6 +12,7 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+# local DATABAS
 DATABASES = {
         'default': dj_database_url.parse('sqlite:///pydotorg.db')
 }
