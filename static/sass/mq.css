@@ -113,6 +113,11 @@
 /* Color Spaces: use for consistency */
 /* Buttons */
 /* Other elements */
+@font-face {
+    font-family: droid;
+    src: url(DroidNaskh.ttf);
+}
+
 .container,
 .row,
 .pep-list-header,
@@ -1563,6 +1568,7 @@ html[xmlns] .slides { display: block; }
     min-height: 280px; }
 
   .slide-code {
+    direction: ltr;
     position: relative;
     line-height: 1.5; }
 
@@ -2010,8 +2016,10 @@ html[xmlns] .slides { display: block; }
         right: 0; }
       .touch .main-navigation .element-5 .subnav:before, .touch .main-navigation .element-6 .subnav:before, .touch .main-navigation .element-7 .subnav:before, .touch .main-navigation .element-8 .subnav:before, .touch .main-navigation .last .subnav:before {
         left: auto;
+        font-family: droid;
         right: 1.5em; }
     .main-navigation .tier-2 {
+      font-family: droid;
       display: block;
       min-width: 100%; }
       .main-navigation .tier-2 a {
@@ -2051,6 +2059,7 @@ html[xmlns] .slides { display: block; }
       .no-touch .main-navigation .tier-1.element-1 {
         border-left: 0; }
       .no-touch .main-navigation .tier-1.last {
+      font-family: droid;
         border-right: 0; }
       .no-touch .main-navigation .tier-1.element-6, .no-touch .main-navigation .tier-1.element-7 {
         width: auto; }
