@@ -9,11 +9,11 @@
 /* When remembering whether or not there's a hyphen in white-space is too hard */
 /* Use pie-clearfix when there is no width set ont the element to avoid edge cases */
 /* Use to calculate color legibility: http://compass-style.org/reference/compass/utilities/color/contrast/ */
-/* Other interesting functions: 
+/* Other interesting functions:
 	@import "compass/utilities/color/contrast";
 		detailed here: http://compass-style.org/reference/compass/utilities/color/contrast/
-		Used to pass two colors into a get out the most readable color. 
-		Good for situations where we dont want to create a new color, 
+		Used to pass two colors into a get out the most readable color.
+		Good for situations where we dont want to create a new color,
 		but be sure that colors from variables are always going to be readable
 */
 /* ! ===== Grid ===== */
@@ -21,12 +21,12 @@
  * Susy: Un-obtrusive grids for designers
  * By: Eric A. Meyer and OddBird
  * Site: susy.oddbird.net
- * 
+ *
  * Would like to remove the dependence on Susy by using a simpler grid structure : J. Hogue
  */
 /* Settings  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * Susy & Compass use HTML hacks to support IE 6 and 7. You can turn that on or off. 
- * We are using Susy 1.0. Update your GEM file by deleting the old and downloading the new. 
+ * Susy & Compass use HTML hacks to support IE 6 and 7. You can turn that on or off.
+ * We are using Susy 1.0. Update your GEM file by deleting the old and downloading the new.
  */
 /* ! ===== Variables ===== */
 /* Colors */
@@ -42,15 +42,15 @@
 /* Useful to set this here, but don't echo it anywhere. Used in calculations */
 /* Calculate the font-size-adjust of Flux:
  * http://www.cs.tut.fi/~jkorpela/x-height.html
- * Or, in this case, we did it by hand by comparing Flux to Arial, side by side. 
- * We then adjusted it further visually, as Flux is more condensed and therefore line-length changes pretty dramatically. 
+ * Or, in this case, we did it by hand by comparing Flux to Arial, side by side.
+ * We then adjusted it further visually, as Flux is more condensed and therefore line-length changes pretty dramatically.
  */
-/* 
-	Compass will convert the font sizes from px to em and fit it into the vertical rhythm automatically with the necessary margin 
+/*
+	Compass will convert the font sizes from px to em and fit it into the vertical rhythm automatically with the necessary margin
 	A neat trick, for sure. More on using the vertical rhythm properties and mixins: http://compass-style.org/reference/compass/typography/vertical_rhythm/
-	
-	Note: The line height is relative to the constant $base-line-height. 
-	The number you specify for the leader, trailer and leading will be multiplied by the constant, then converted to its relative value in ems. 
+
+	Note: The line height is relative to the constant $base-line-height.
+	The number you specify for the leader, trailer and leading will be multiplied by the constant, then converted to its relative value in ems.
 	Don’t worry about nested elements etc, Compass will do the maths for you :)
 */
 /* Defaults */
@@ -62,7 +62,7 @@
 /* NOTE: Neither of these work on units with decimal points. */
 /* Easy little function to do the math of pixel to EM conversion for us. Needs a base-font-size set in _base.scss */
 /* Shorthand for a set of useful text/line-height resizing functions. easier to remember... */
-/* 
+/*
  * Font-size-adjust: the problem and a solution
  * Not widely supported, can't use this yet */
 /* Since we can't use the above, let's create our own way to do it. */
@@ -70,43 +70,43 @@
 /* Talk of depreciating the Compass mixin, so we pull it in here and make small adjustments */
 /* Namespace the box-sizing mixin so we can add support (a polyfill?) for IE6/7 */
 /* Vertical and Horizontal gradient mixins to make things easier. */
-/* 
- * Set all the up-and-coming input text types here for easier reference 
- * Does not include types that are not meant to be displayed full width, such as: 
+/*
+ * Set all the up-and-coming input text types here for easier reference
+ * Does not include types that are not meant to be displayed full width, such as:
         type=number, type=range, type=date, type=color
  * Usage: @include input-text-types() { @content }
  */
-/* 
- * Cross browser @keyframe definition set 
+/*
+ * Cross browser @keyframe definition set
  * Compass doesn't have one yet, so we namespace this so as not to conflict with a future release
  */
-/* 
- * Cross browser animation definition set 
+/*
+ * Cross browser animation definition set
  * Compass doesn't have one yet, so we namespace this so as not to conflict with a future release
- * 
+ *
  * $timing: linear | ease | ease-in | ease-out | ease-in-out
  * $delay: seconds before animation starts
  * $count: how many times the animation will loop
  * $direction: normal | alternate (Play even-numbered iterations of the animation in the forward direction and odd-numbered iterations in the reverse direction.)
  * $fill-mode: none | forwards | backwards | both
  *      forwards (The animation’s final keyframe continues to apply after the final iteration of the animation completes)
- *      backwards (The animation’s initial keyframe is applied as soon as the animation style is applied to an element. 
+ *      backwards (The animation’s initial keyframe is applied as soon as the animation style is applied to an element.
  *      This only affects animations that have a nonzero value for -webkit-animation-delay)
- *      both (The animation’s initial keyframe is applied as soon as the animation style is applied to an element, 
- *      and the animation’s final keyframe continues to apply after the final iteration of the animation completes. 
+ *      both (The animation’s initial keyframe is applied as soon as the animation style is applied to an element,
+ *      and the animation’s final keyframe continues to apply after the final iteration of the animation completes.
  *      The initial keyframe only affects animations that have a nonzero value for -webkit-animation-delay)
  */
-/* 
- * Cross browser method to apply word-breaking and hyphenation (where supported) 
+/*
+ * Cross browser method to apply word-breaking and hyphenation (where supported)
  * Should be able to use the built-in Compass method, hyphenation(), but the library won't load right now
  */
 /* Keep this in all mix-in files if you can. Useful stuff */
 /* Manage our preferred reset as a Mix-in instead of relying on Compass or Blueprint */
 /* HTML5 Boilerplate Non-semantic helper classes */
 /* Add in the HTML5 Boilerplate rules for print (generic). Modify as needed. */
-/* ! ===== LOCAL EXTENDABLE STYLES ===== 
+/* ! ===== LOCAL EXTENDABLE STYLES =====
  *
- * "Local" mixins can be used with the @extend operative. 
+ * "Local" mixins can be used with the @extend operative.
  * If the rule name has a % in front of it, it will not be output as part of the file, only if called with @extend
  * Unfortunately, the @extend operative does not work inside a media query or mix-in
  */
@@ -174,7 +174,7 @@
  *
  * Contributing author: Tyler Smith (@mbmufffin)
  */
-/* Browser Resets 
+/* Browser Resets
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
@@ -182,14 +182,14 @@
 .slides,
 .flex-control-nav,
 .flex-direction-nav {margin: 0; padding: 0; list-style: none;} */
-                                                                               /* FlexSlider Necessary Styles 
+                                                                               /* FlexSlider Necessary Styles
 .flexslider {margin: 0; padding: 0;}
-.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping 
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping
 .flexslider .slides img {width: 100%; display: block;}
 .flex-pauseplay span {text-transform: capitalize;} */
 /* Clearfix for the .slides element
 .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
-html[xmlns] .slides { display: block; } 
+html[xmlns] .slides { display: block; }
 * html .slides { height: 1%; }*/
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you include js that eliminates this class on page load
@@ -237,11 +237,11 @@ html[xmlns] .slides { display: block; }
 /* When remembering whether or not there's a hyphen in white-space is too hard */
 /* Use pie-clearfix when there is no width set ont the element to avoid edge cases */
 /* Use to calculate color legibility: http://compass-style.org/reference/compass/utilities/color/contrast/ */
-/* Other interesting functions: 
+/* Other interesting functions:
 	@import "compass/utilities/color/contrast";
 		detailed here: http://compass-style.org/reference/compass/utilities/color/contrast/
-		Used to pass two colors into a get out the most readable color. 
-		Good for situations where we dont want to create a new color, 
+		Used to pass two colors into a get out the most readable color.
+		Good for situations where we dont want to create a new color,
 		but be sure that colors from variables are always going to be readable
 */
 /* ! ===== Grid ===== */
@@ -249,12 +249,12 @@ html[xmlns] .slides { display: block; }
  * Susy: Un-obtrusive grids for designers
  * By: Eric A. Meyer and OddBird
  * Site: susy.oddbird.net
- * 
+ *
  * Would like to remove the dependence on Susy by using a simpler grid structure : J. Hogue
  */
 /* Settings  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * Susy & Compass use HTML hacks to support IE 6 and 7. You can turn that on or off. 
- * We are using Susy 1.0. Update your GEM file by deleting the old and downloading the new. 
+ * Susy & Compass use HTML hacks to support IE 6 and 7. You can turn that on or off.
+ * We are using Susy 1.0. Update your GEM file by deleting the old and downloading the new.
  */
 /* ! ===== Variables ===== */
 /* Colors */
@@ -270,15 +270,15 @@ html[xmlns] .slides { display: block; }
 /* Useful to set this here, but don't echo it anywhere. Used in calculations */
 /* Calculate the font-size-adjust of Flux:
  * http://www.cs.tut.fi/~jkorpela/x-height.html
- * Or, in this case, we did it by hand by comparing Flux to Arial, side by side. 
- * We then adjusted it further visually, as Flux is more condensed and therefore line-length changes pretty dramatically. 
+ * Or, in this case, we did it by hand by comparing Flux to Arial, side by side.
+ * We then adjusted it further visually, as Flux is more condensed and therefore line-length changes pretty dramatically.
  */
-/* 
-	Compass will convert the font sizes from px to em and fit it into the vertical rhythm automatically with the necessary margin 
+/*
+	Compass will convert the font sizes from px to em and fit it into the vertical rhythm automatically with the necessary margin
 	A neat trick, for sure. More on using the vertical rhythm properties and mixins: http://compass-style.org/reference/compass/typography/vertical_rhythm/
-	
-	Note: The line height is relative to the constant $base-line-height. 
-	The number you specify for the leader, trailer and leading will be multiplied by the constant, then converted to its relative value in ems. 
+
+	Note: The line height is relative to the constant $base-line-height.
+	The number you specify for the leader, trailer and leading will be multiplied by the constant, then converted to its relative value in ems.
 	Don’t worry about nested elements etc, Compass will do the maths for you :)
 */
 /* Defaults */
@@ -290,7 +290,7 @@ html[xmlns] .slides { display: block; }
 /* NOTE: Neither of these work on units with decimal points. */
 /* Easy little function to do the math of pixel to EM conversion for us. Needs a base-font-size set in _base.scss */
 /* Shorthand for a set of useful text/line-height resizing functions. easier to remember... */
-/* 
+/*
  * Font-size-adjust: the problem and a solution
  * Not widely supported, can't use this yet */
 /* Since we can't use the above, let's create our own way to do it. */
@@ -298,43 +298,43 @@ html[xmlns] .slides { display: block; }
 /* Talk of depreciating the Compass mixin, so we pull it in here and make small adjustments */
 /* Namespace the box-sizing mixin so we can add support (a polyfill?) for IE6/7 */
 /* Vertical and Horizontal gradient mixins to make things easier. */
-/* 
- * Set all the up-and-coming input text types here for easier reference 
- * Does not include types that are not meant to be displayed full width, such as: 
+/*
+ * Set all the up-and-coming input text types here for easier reference
+ * Does not include types that are not meant to be displayed full width, such as:
         type=number, type=range, type=date, type=color
  * Usage: @include input-text-types() { @content }
  */
-/* 
- * Cross browser @keyframe definition set 
+/*
+ * Cross browser @keyframe definition set
  * Compass doesn't have one yet, so we namespace this so as not to conflict with a future release
  */
-/* 
- * Cross browser animation definition set 
+/*
+ * Cross browser animation definition set
  * Compass doesn't have one yet, so we namespace this so as not to conflict with a future release
- * 
+ *
  * $timing: linear | ease | ease-in | ease-out | ease-in-out
  * $delay: seconds before animation starts
  * $count: how many times the animation will loop
  * $direction: normal | alternate (Play even-numbered iterations of the animation in the forward direction and odd-numbered iterations in the reverse direction.)
  * $fill-mode: none | forwards | backwards | both
  *      forwards (The animation’s final keyframe continues to apply after the final iteration of the animation completes)
- *      backwards (The animation’s initial keyframe is applied as soon as the animation style is applied to an element. 
+ *      backwards (The animation’s initial keyframe is applied as soon as the animation style is applied to an element.
  *      This only affects animations that have a nonzero value for -webkit-animation-delay)
- *      both (The animation’s initial keyframe is applied as soon as the animation style is applied to an element, 
- *      and the animation’s final keyframe continues to apply after the final iteration of the animation completes. 
+ *      both (The animation’s initial keyframe is applied as soon as the animation style is applied to an element,
+ *      and the animation’s final keyframe continues to apply after the final iteration of the animation completes.
  *      The initial keyframe only affects animations that have a nonzero value for -webkit-animation-delay)
  */
-/* 
- * Cross browser method to apply word-breaking and hyphenation (where supported) 
+/*
+ * Cross browser method to apply word-breaking and hyphenation (where supported)
  * Should be able to use the built-in Compass method, hyphenation(), but the library won't load right now
  */
 /* Keep this in all mix-in files if you can. Useful stuff */
 /* Manage our preferred reset as a Mix-in instead of relying on Compass or Blueprint */
 /* HTML5 Boilerplate Non-semantic helper classes */
 /* Add in the HTML5 Boilerplate rules for print (generic). Modify as needed. */
-/* ! ===== LOCAL EXTENDABLE STYLES ===== 
+/* ! ===== LOCAL EXTENDABLE STYLES =====
  *
- * "Local" mixins can be used with the @extend operative. 
+ * "Local" mixins can be used with the @extend operative.
  * If the rule name has a % in front of it, it will not be output as part of the file, only if called with @extend
  * Unfortunately, the @extend operative does not work inside a media query or mix-in
  */
@@ -368,18 +368,18 @@ html[xmlns] .slides { display: block; }
 /* Base styles for a navigation with dropdowns mixin */
 /* A two-tier, stacked version of the main navigation -- DESKTOP ONLY */
 /* A single row of main navigation -- DESKTOP ONLY */
-/* 
- * ! ===== START Media Queries ===== 
+/*
+ * ! ===== START Media Queries =====
  *
  * Define media queries here as mix-ins. Deliver the ones we want inside of complete mqs in mq.scss
- * Alternately, deliver the rule-sets that we want to IE7 and 8 to render 
- * by calling the mixin WITHOUT surrounding it in a media query for no-mq.scss. 
+ * Alternately, deliver the rule-sets that we want to IE7 and 8 to render
+ * by calling the mixin WITHOUT surrounding it in a media query for no-mq.scss.
  *
- * Column structure =  
- * 
+ * Column structure =
+ *
  *  Susy mix-ins with examples:
- *  @include span-columns(3 omega, 12); 
- *  @include omega; 
+ *  @include span-columns(3 omega, 12);
+ *  @include omega;
  *  @include prefix(3); 3 columns of padding before
  *  @include suffix(3); 3 columns of padding after
  *  @include pad(3,3); 3 columns of padding on each side
@@ -400,11 +400,11 @@ html[xmlns] .slides { display: block; }
 /* ! ===== Larger than 940px - Large ===== */
 /* ! ===== Larger than 1024px - ExtraLarge ===== */
 /* ! ===== Larger than 1200px - Supersize ===== */
-/* 
- * We "label" the body with strings that correspond to js functions that we want to fire. 
- * A window.resize() event checks this label and functions fire when conditions are met 
+/*
+ * We "label" the body with strings that correspond to js functions that we want to fire.
+ * A window.resize() event checks this label and functions fire when conditions are met
  *
- * The nice part is, these labels can be strings with more than one item in them. 
+ * The nice part is, these labels can be strings with more than one item in them.
  * As many JS functions that we want to fire at different widths can be controlled with tese labels.
  */
 /* - - - Smaller than 400px - - - */
@@ -515,7 +515,7 @@ html[xmlns] .slides { display: block; }
     speak: none; }
 
   .main-navigation {
-    /* Include the mixins to start our horizontal nav 
+    /* Include the mixins to start our horizontal nav
      * Don't wrap this in a .touch or .no-touch, as it has those selectors already inside
     */
     text-align: center;
@@ -691,7 +691,7 @@ html[xmlns] .slides { display: block; }
 </nav>
 
 ! Because "touch" is present, we assume that the browser can handle cssTransform3d and cssTransition, which might be dangerous
-! If there is no javascript running, than the .jump-to-menu link will jump to #site-map (footer) and the .main-navigatin will remain offscreen, which is not such a bad fallback. 
+! If there is no javascript running, than the .jump-to-menu link will jump to #site-map (footer) and the .main-navigatin will remain offscreen, which is not such a bad fallback.
 
 */
   .touch body, .touch #touchnav-wrapper {
@@ -830,9 +830,9 @@ html[xmlns] .slides { display: block; }
   .with-supernav .super-navigation {
     display: none; }
 
-  /* 
-   * This is super cool. Uses two arrays to spit out a bunch of repetitive rulesets. 
-   * Associative array example borrowed from https://github.com/nex3/sass/issues/132#issuecomment-4335097 
+  /*
+   * This is super cool. Uses two arrays to spit out a bunch of repetitive rulesets.
+   * Associative array example borrowed from https://github.com/nex3/sass/issues/132#issuecomment-4335097
    */
   .python-navigation {
     background-color: #2d618c;
@@ -1920,7 +1920,7 @@ html[xmlns] .slides { display: block; }
     speak: none; }
 
   .main-navigation {
-    /* Include the mixins to start our horizontal nav 
+    /* Include the mixins to start our horizontal nav
      * Don't wrap this in a .touch or .no-touch, as it has those selectors already inside
     */
     text-align: center;
@@ -2064,6 +2064,7 @@ html[xmlns] .slides { display: block; }
       .no-touch .main-navigation .tier-1.element-6, .no-touch .main-navigation .tier-1.element-7 {
         width: auto; }
       .no-touch .main-navigation .tier-1 > a {
+        font-family: droid;
         padding: 0.65em 1.25em 0.55em; }
     .no-touch .main-navigation .tier-2 {
       font-size: 0.875em; }
@@ -2108,7 +2109,7 @@ html[xmlns] .slides { display: block; }
               <h2>Download for Mac OSX</h2>
               <p>Not the system you are looking for? Python can be used on 21 different operating systems and environments. <a href="#">View the full list</a>.
               </p><p>
-                  <a class="button">Python 3.3.0</a> 
+                  <a class="button">Python 3.3.0</a>
                   <a class="button">Python 2.7.3</a>
               </p>
           </li></ul>
@@ -2357,7 +2358,7 @@ html[xmlns] .slides { display: block; }
     right: -.75em; }
 
   /* I don't like including this again.
-   * The problem is, touch device styles are being clobbered by contents in the horizontal_nav_dropdowns mixin 
+   * The problem is, touch device styles are being clobbered by contents in the horizontal_nav_dropdowns mixin
    * We need the contents of that mixin to function in the Social Share and Font Adjust drop downs */
     /*
 <nav id="mainnav" class="python-navigation main-navigation do-not-print" role="navigation">
@@ -2373,7 +2374,7 @@ html[xmlns] .slides { display: block; }
 </nav>
 
 ! Because "touch" is present, we assume that the browser can handle cssTransform3d and cssTransition, which might be dangerous
-! If there is no javascript running, than the .jump-to-menu link will jump to #site-map (footer) and the .main-navigatin will remain offscreen, which is not such a bad fallback. 
+! If there is no javascript running, than the .jump-to-menu link will jump to #site-map (footer) and the .main-navigatin will remain offscreen, which is not such a bad fallback.
 
 */
   .touch body, .touch #touchnav-wrapper {
