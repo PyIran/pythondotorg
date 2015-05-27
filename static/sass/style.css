@@ -927,7 +927,7 @@ b, strong {
   font-family: droid, Arial, sans-serif; }
 
 i, em {
-  font-family: SourceSansProItalic, Arial, sans-serif; }
+  font-family: droid, Arial, sans-serif; }
 
 abbr, dfn {
   border-bottom: 1px dotted #3776ab; }
@@ -1105,7 +1105,7 @@ h2.not-column {
 .icon-search,
 .icon-search:before,
 input#s,
-.adjust-font-size,
+.adi-font-size,
 .winkwink-nudgenudge,
 .account-signin {
   display: -moz-inline-stack;
@@ -2106,6 +2106,8 @@ table tfoot {
   -o-border-radius: 6px;
   border-radius: 6px; }
   .success-stories-widget blockquote:after {
+    font-family: droid;
+    text-align: justify;    
     position: absolute;
     content: "";
     width: 0;
@@ -2117,16 +2119,24 @@ table tfoot {
     bottom: -2.875em;
     border-top-color: #ffdf76; }
   .success-stories-widget blockquote a {
+    font-family: droid;
+    text-align: justify;
     color: #666666; }
     .success-stories-widget blockquote a:hover, .success-stories-widget blockquote a:focus, .success-stories-widget blockquote a:active {
-      color: #3776ab; }
+    font-family: droid;
+    text-align: justify;
+    color: #3776ab; }
 .success-stories-widget .quote-from td {
-  padding: .5em;
-  vertical-align: middle; }
+    font-family: droid;
+    text-align: justify;
+    padding: .5em;
+    vertical-align: middle; }
 .success-stories-widget .quote-from img {
-  max-height: 5em; }
+    max-height: 5em; }
 .success-stories-widget .quote-from p {
-  font-size: 0.875em; }
+    font-family: droid;
+    font-size: 0.875em;
+    text-align: left; }
 
 /*.statistics-widget {
     padding-left: .75em;
