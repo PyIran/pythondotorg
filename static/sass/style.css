@@ -1002,6 +1002,7 @@ h2.not-column {
   background-color: #1e2933;
   border-bottom: 1px solid #1f3b47; }
   .top-bar a {
+    font-family: droid, Arial, sans-serif;
     position: relative;
     display: block;
     color: #999999;

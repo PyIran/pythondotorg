@@ -757,7 +757,7 @@ html[xmlns] .slides { display: block; }
     .meta-navigation .jump-link {
       display: none; }
     .meta-navigation li {
-      float: left;
+      float: right;
       width: 16.6666667%;
       /* 6 columns */
       border-left: 1px solid #273643;
