@@ -975,7 +975,7 @@ h2.not-column {
   white-space: nowrap; }
   .readmore:before, .give-me-more a:before {
     content: ">>>";
-    margin-right: .25em; }
+    margin-left: .25em; }
 
 .larger {
   font-size: 120%; }
@@ -2170,7 +2170,7 @@ table tfoot {
     display: none;
     position: absolute;
     top: .25em;
-    right: .25em; }
+    left: .25em; }
     .shrubbery .give-me-more a {
       color: #999999; }
       .shrubbery .give-me-more a:hover, .shrubbery .give-me-more a:active {
